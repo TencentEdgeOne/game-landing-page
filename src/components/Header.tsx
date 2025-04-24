@@ -42,7 +42,7 @@ export default function Header() {
         {/* Background image and gradient effect */}
         <div className="absolute inset-0 z-0">
           <Image 
-            src="/images/bg-image.png" 
+            src="/images/bg-image.webp" 
             alt="Game background" 
             fill 
             priority
@@ -59,7 +59,7 @@ export default function Header() {
               {/* Logo */}
               <div className="w-[128px] h-[48px] relative">
                 <Image 
-                  src="/images/logo.png" 
+                  src="/images/logo.webp" 
                   alt="SURVIVE logo" 
                   fill
                   className="object-contain"

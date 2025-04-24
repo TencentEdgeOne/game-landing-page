@@ -30,7 +30,7 @@ export default function RequirementsSection() {
       <div className="absolute inset-0 z-0">
         {/* Background image */}
         <Image 
-          src="/images/bg-image-4.png" 
+          src="/images/bg-image-4.webp" 
           alt="Background" 
           fill 
           className="object-cover"

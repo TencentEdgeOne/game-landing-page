@@ -1,5 +1,5 @@
 # APP Landing Page Template
-This template is an game landing page implemented with Next.js static generation and Tailwind CSS. The design is inspired by [Zelal Hossain](https://www.figma.com/community/file/1217036317745794461).
+This template is a game landing page implemented with Next.js static generation and Tailwind CSS. The design is inspired by [Zelal Hossain](https://www.figma.com/community/file/1217036317745794461).
 
 ## Local Development
 Install dependencies: `npm install`

@@ -5,7 +5,7 @@ export default function QuotesSection() {
   const quotes = [
     {
       id: 1,
-      avatar: '/images/quote-avatar-1.png',
+      avatar: '/images/quote-avatar-1.webp',
       name: 'Evan Lahti',
       workplace: 'PC Gamer',
       quoteText: 'One of my gaming highlights of the year.',
@@ -13,7 +13,7 @@ export default function QuotesSection() {
     },
     {
       id: 2,
-      avatar: '/images/quote-avatar-2.png',
+      avatar: '/images/quote-avatar-2.webp',
       name: 'Jada Griffin',
       workplace: 'Nerdreactor',
       quoteText: 'The next big thing in the world of streaming and survival games.',
@@ -21,7 +21,7 @@ export default function QuotesSection() {
     },
     {
       id: 3,
-      avatar: '/images/quote-avatar-3.png',
+      avatar: '/images/quote-avatar-3.webp',
       name: 'Aaron Williams',
       workplace: 'Uproxx',
       quoteText: 'Snoop Dogg Playing The Wildly Entertaining "SOS" Is Ridiculous.',
@@ -37,7 +37,7 @@ export default function QuotesSection() {
         <div className="absolute inset-0 bg-dark"></div>
         {/* Background image */}
         <Image 
-          src="/images/bg-image-5.png" 
+          src="/images/bg-image-5.webp" 
           alt="Background" 
           fill 
           className="object-cover mix-blend-overlay opacity-70"
@@ -49,7 +49,7 @@ export default function QuotesSection() {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 md:px-8 lg:px-16 flex flex-col lg:flex-row h-full pt-16 gap-16 lg:gap-24">
         {/* Left content */}
-        <div className="w-full lg:w-1.5/3 flex flex-col justify-center">
+        <div className="w-full lg:w-1/3 flex flex-col">
           <div className="mb-8">
             <h3 className="font-bebas text-xl md:text-2xl tracking-widest text-white mb-2">
               What people think?
@@ -72,9 +72,8 @@ export default function QuotesSection() {
         </div>
 
         {/* Right quotes content */}
-        <div className="w-full lg:w-1.5/3">
-          <div className="grid grid-rows-1 md:grid-rows-2 lg:grid-rows-3 gap-6">
-          {/* <div className="grid grid-rows-1 md:grid-rows-2 lg:grid-rows-3 gap-6"> */}
+        <div className="w-full lg:w-2/3">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {quotes.map((quote) => (
               <Quote 
                 key={quote.id}

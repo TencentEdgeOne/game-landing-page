@@ -40,7 +40,7 @@ export default function FeaturesSection() {
         <div className="absolute inset-0 bg-black"></div>
         {/* Background image */}
         <Image
-          src="/images/bg-image-3.png"
+          src="/images/bg-image-3.webp"
           alt="Background"
           fill
           className="object-cover opacity-60"

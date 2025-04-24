@@ -5,9 +5,9 @@ export default function AboutSection() {
   const [activeSlide, setActiveSlide] = useState(0);
   
   const screenshots = [
-    { id: 1, src: '/images/screenshot-1.png', alt: 'Game screenshot 1' },
-    { id: 2, src: '/images/screenshot-2.png', alt: 'Game screenshot 2' },
-    { id: 3, src: '/images/screenshot-3.png', alt: 'Game screenshot 3' },
+    { id: 1, src: '/images/screenshot-1.webp', alt: 'Game screenshot 1' },
+    { id: 2, src: '/images/screenshot-2.webp', alt: 'Game screenshot 2' },
+    { id: 3, src: '/images/screenshot-3.webp', alt: 'Game screenshot 3' },
   ];
 
   const handleSlideChange = (index: number) => {
@@ -19,7 +19,7 @@ export default function AboutSection() {
       {/* Background image and overlay */}
       <div className="absolute inset-0 z-0">
         <Image 
-          src="/images/bg-image-2.png" 
+          src="/images/bg-image-2.webp" 
           alt="Background" 
           fill 
           className="object-cover"
@@ -106,7 +106,17 @@ export default function AboutSection() {
 
         {/* Right images showcase */}
         <div className="w-full md:w-1/2 relative h-100">
-          
+          {/* Switch buttons */}
+          <div className="absolute top-1/2 -translate-y-1/2 -left-8 md:-left-12 z-20">
+            <Image 
+              src="/images/switch.svg" 
+              alt="Switch" 
+              width={40} 
+              height={70} 
+              className="cursor-pointer"
+              onClick={() => handleSlideChange((activeSlide - 1 + screenshots.length) % screenshots.length)}
+            />
+          </div>
           
           {/* Screenshots display */}
           <div className="relative">
@@ -140,17 +150,6 @@ export default function AboutSection() {
                 onClick={() => handleSlideChange(index)}
               ></button>
             ))}
-          </div>
-          {/* Switch buttons */}
-          <div className="absolute top-1/2 -translate-y-1/2 -right-18 z-20">
-            <Image 
-              src="/images/switch.svg" 
-              alt="Switch" 
-              width={20} 
-              height={35} 
-              className="cursor-pointer"
-              onClick={() => handleSlideChange((activeSlide - 1 + screenshots.length) % screenshots.length)}
-            />
           </div>
         </div>
       </div>
