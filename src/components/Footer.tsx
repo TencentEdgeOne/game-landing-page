@@ -8,7 +8,7 @@ export default function Footer() {
           {/* Logo */}
           <div className="w-[130px] h-[48px] relative mb-8">
             <Image 
-              src="/images/logo.png" 
+              src="/images/logo.webp" 
               alt="SURVIVE logo" 
               fill
               className="object-contain"
