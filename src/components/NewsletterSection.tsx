@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { useState } from 'react';
 
 export default function NewsletterSection() {
@@ -20,17 +19,10 @@ export default function NewsletterSection() {
   return (
     <section id="newsletter" className="relative py-16 overflow-hidden bg-dark">
       {/* Background image and overlay */}
-      <div className="absolute inset-0 z-0">
-        {/* Background image */}
-        <Image 
-          src="/images/newsletter-bg.webp" 
-          alt="Background" 
-          fill 
-          className="object-cover opacity-60"
-        />
-        {/* Radial gradient */}
+      <div className={`absolute inset-0 z-0 w-100 left-20 bg-[url('/images/newsletter-bg.webp')] bg-contain`}>
         <div className="absolute inset-0 bg-gradient-radial from-transparent via-transparent to-black"></div>
       </div>
+      <div className="absolute inset-0 z-0 w-full bg-radial-[at_15%_50%] from-[rgba(0,0,0,0.2)] to-black to-55%"></div>
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 md:px-8 lg:px-16 flex flex-col items-center h-full pt-8">
@@ -68,7 +60,7 @@ export default function NewsletterSection() {
           </div>
           <button 
             type="submit" 
-            className="bg-gradient-to-b from-primary to-[#F3AF34] py-3 px-8 rounded text-dark font-bold"
+            className="bg-primary py-3 px-8 rounded text-dark font-bold cursor-pointer"
           >
             Subscribe now
           </button>
