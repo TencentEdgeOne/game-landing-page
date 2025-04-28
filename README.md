@@ -12,5 +12,9 @@ You can modify the color theme in `/src/styles/globals.css`.
 [![Deploy with EdgeOne Pages](https://cdnstatic.tencentcs.com/edgeone/pages/deploy.svg)](https://console.tencentcloud.com/edgeone/pages/new?template=game-landing-page)
 
 
-
+## Features
+- Developed with Next.js TypeScript
+- Flexible and clean styling with Tailwind CSS
+- Purely static pages, excellent Lighthouse scores
+- Modular, responsive and scalable components
 
