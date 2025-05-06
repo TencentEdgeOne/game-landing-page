@@ -1,4 +1,4 @@
-# APP 落地页模板
+# 游戏落地页模板
 本模板是基于 Next.js 静态生成和 Tailwind CSS 实现的游戏落地页，外观设计来自[
 Zelal Hossain](https://www.figma.com/community/file/1217036317745794461)。
 
