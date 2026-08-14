@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>SURVIVE - Game Landing Page</title>
-        <meta name="description" content="Experience new social battle royale game" />
+        <title>SURVIVE - Game Landing Page | EdgeOne Makers</title>
+        <meta name="description" content="Experience new social battle royale game · Demo only · EdgeOne Makers" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
